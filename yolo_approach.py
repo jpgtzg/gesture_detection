@@ -1,14 +1,3 @@
-"""Approach 1: fine-tuned YOLO model.
-
-MediaPipe is only used to auto-label: the bounding box around the detected body
-landmarks (stored by collect.py) becomes the YOLO label for each frame.
-
-    uv run collect.py                   # record clips (shared by all approaches)
-    uv run yolo_approach.py prepare     # build the YOLO dataset from the recordings
-    uv run yolo_approach.py train       # fine-tune YOLO on them
-    uv run yolo_approach.py detect      # live detection
-"""
-
 import argparse
 import os
 import random

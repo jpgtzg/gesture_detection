@@ -1,14 +1,3 @@
-"""Approach 2: embedding-based classifier with cosine similarity.
-
-Every recorded frame (see collect.py) is turned into a normalized landmark vector
-and stored as an embedding. At inference, the live frame is compared against the
-database and the closest embeddings vote for the gesture. Adding a gesture only
-requires recording clips and rebuilding the database, no training.
-
-    uv run embeddings_approach.py build    # build the embedding database
-    uv run embeddings_approach.py detect   # live detection
-"""
-
 import argparse
 from collections import Counter
 

@@ -1,13 +1,3 @@
-"""Records gesture clips for every approach.
-
-Each clip is saved as recordings/<category>_<index>.mp4 (raw video) plus
-recordings/<category>_<index>.npz (MediaPipe landmarks, bounding boxes, fps).
-Approach 1 uses the video + bounding boxes, approach 2 the landmarks.
-
-    uv run collect.py                                  # all categories
-    uv run collect.py -c clap hug -n 3                 # 3 more clips of clap and hug
-"""
-
 import argparse
 import glob
 
