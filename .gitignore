@@ -11,3 +11,8 @@ wheels/
 
 # Generated training data
 training_videos/
+datasets/
+runs/
+embeddings.npz
+*.pt
+recordings/
